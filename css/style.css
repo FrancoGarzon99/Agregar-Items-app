@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Fondo del menu (nav)*/
+.fondoMenu{
+    background-image: linear-gradient(to right, #22c5ee,#02f7ff); 
+}
+
+/*Estilos cambiados del boton principal*/
+.backgroundBtn{
+    background-image: linear-gradient(to right, #22c5ee,#02f7ff);
+}
+.pulse::before{
+    background-image: linear-gradient(to right, #22c5ee,#02f7ff);
+}
