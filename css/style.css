@@ -38,7 +38,8 @@ body{
 }
 .cardOutput .barritaDeColor{
     background-color: rgb(243, 72, 42);
-    width: 100%;
+    width: 15%;
+    float: left;
     height: 5px;
     position: relative;
     border: none;
