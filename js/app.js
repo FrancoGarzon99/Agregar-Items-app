@@ -59,7 +59,7 @@ function mostrarTaks(){
         //le asignamos un div a la salida de las tareas que vamos a ingresar
         outputTask.innerHTML += `<div class="card cardOutput card-panel hoverable">
             <div class="card-body">
-            <h4>${title}</h4>
+            <h5>${title}</h5>
             <p>${description}<p>
             <button class="btn-floating btn waves-effect waves-light red" onClick="borrarTask('${title}'),M.toast({html: 'Tarea Eliminada',classes: 'backgroundBtn'})" ><i class="material-icons">delete</i></button>
             </div>
