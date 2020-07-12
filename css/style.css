@@ -8,10 +8,43 @@ body{
     background-image: linear-gradient(to right, #22c5ee,#02f7ff); 
 }
 
-/*Estilos cambiados del boton principal*/
+/*Estilos editados del boton principal*/
 .backgroundBtn{
     background-image: linear-gradient(to right, #22c5ee,#02f7ff);
 }
 .pulse::before{
     background-image: linear-gradient(to right, #22c5ee,#02f7ff);
 }
+/*Altura de titulo del nav*/
+.titleNav{
+    font-size: 18px;
+}
+/*magenes de card principal para agregar items*/
+.cardDeTareas{
+    margin: 40px 0px;
+}
+/*card donde salen los datos de los items*/
+.card{
+    border-radius: 10px;
+}
+.outputTask{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cardOutput{
+    width: 45%;
+    height: auto;
+}
+.cardOutput .barritaDeColor{
+    background-color: rgb(243, 72, 42);
+    width: 100%;
+    height: 5px;
+    position: relative;
+    border: none;
+}
+.cardOutput{
+   padding: 24px;
+   margin: 20px;
+}
+

@@ -5,7 +5,7 @@ document.getElementById('formTask').addEventListener('submit',guardarTasks);
 //Esta funcion Guarda los datos ingresados en los inputs,ademas los guardara en LocalStorage([{}]), para poder utilizarlos luego en la Funcion MostrarTask()-
 function guardarTasks(e){
     //le pasamos el Eveto de addEventListener por parametro a la funcion guardarTasks
-
+    
     const title = document.getElementById('title').value;//guardamos en una constante los valores ingresado desde el input con id(title)
     const description = document.getElementById('description').value;//lo mismo hacemos en el textArea, desde su id (description)
     
@@ -19,7 +19,7 @@ function guardarTasks(e){
     /*luego usamos localStorage.setItem para poder guardar los datos ingresados en el objeto task.
     con JSON.stringify(task),lo que hacemos es pasar los parametros/valores del objeto a string para poder verlos en el localStorage.
     */
-    if (localStorage.getItem('nuevoArrayTasks') === null){
+    if (localStorage.getItem('nuevoArrayTasks') === undefined){
         //le preguntamos si en localStorage hay una key con el nombre nuevoArrayTasks para poder crear la lista de tareas
         let nuevoArrayTasks =[];
         //creamos una variable que contendra todos los datos ingresadas en la constante taskDate
@@ -57,11 +57,12 @@ function mostrarTaks(){
         //guardo en la variable description los datos que contiene la propiedad "description"
         let description = task.description;
         //le asignamos un div a la salida de las tareas que vamos a ingresar
-        outputTask.innerHTML += `<div class="card mb-3">
+        outputTask.innerHTML += `<div class="card cardOutput card-panel hoverable">
+            <hr class="barritaDeColor"/>
             <div class="card-body">
             <h4>${title}</h4>
             <p>${description}<p>
-            <button class="btn btn-danger" onClick="borrarTask('${title}')" >Delete</button>
+            <button class="btn-floating btn waves-effect waves-light red" onClick="borrarTask('${title}'),M.toast({html: 'Tarea Eliminada',classes: 'backgroundBtn'})" ><i class="material-icons">delete</i></button>
             </div>
         </div>`
         
