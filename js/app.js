@@ -58,7 +58,6 @@ function mostrarTaks(){
         let description = task.description;
         //le asignamos un div a la salida de las tareas que vamos a ingresar
         outputTask.innerHTML += `<div class="card cardOutput card-panel hoverable">
-            <hr class="barritaDeColor"/>
             <div class="card-body">
             <h4>${title}</h4>
             <p>${description}<p>

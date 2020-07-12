@@ -36,16 +36,23 @@ body{
     width: 45%;
     height: auto;
 }
-.cardOutput .barritaDeColor{
+/* .cardOutput .barritaDeColor{
     background-color: rgb(243, 72, 42);
     width: 15%;
     float: left;
     height: 5px;
     position: relative;
     border: none;
-}
+} */
 .cardOutput{
    padding: 24px;
    margin: 20px;
 }
+
+
+
+
+
+
+
 
