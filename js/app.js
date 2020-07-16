@@ -19,7 +19,7 @@ function guardarTasks(e){
     /*luego usamos localStorage.setItem para poder guardar los datos ingresados en el objeto task.
     con JSON.stringify(task),lo que hacemos es pasar los parametros/valores del objeto a string para poder verlos en el localStorage.
     */
-    if (localStorage.getItem('nuevoArrayTasks') === undefined){
+    if (localStorage.getItem('nuevoArrayTasks') === null){
         //le preguntamos si en localStorage hay una key con el nombre nuevoArrayTasks para poder crear la lista de tareas
         let nuevoArrayTasks =[];
         //creamos una variable que contendra todos los datos ingresadas en la constante taskDate
@@ -38,8 +38,8 @@ function guardarTasks(e){
         localStorage.setItem('nuevoArrayTasks',JSON.stringify(nuevoArrayTasks));
     }
     document.getElementById('formTask').reset()
-    mostrarTaks()
     e.preventDefault();//con PreventDefault() quitamos el metodo default de submit.
+    mostrarTaks()
 }
 
 //Esta Funcion muesta los datos ingresados en cada input en una card.
@@ -51,6 +51,7 @@ function mostrarTaks(){
     //limpiamos el div donde van a ingresar los datos de las tareas
     outputTask.innerHTML = '';
     //recorremos con forEach todas las tareas ingresadas 
+
     taskRecibida.forEach(task =>{
         //guardo en la variable title los datos que contiene la propiedad "title"
         let title = task.title;
@@ -82,8 +83,8 @@ function borrarTask(title){
     mostrarTaks();
     
 }
-mostrarTaks()//Para poder mostrar por consola lo que esta haciendo "mostrarTask", hay que llamarla desde fuera
 
+mostrarTaks()
 
 
 
