@@ -61,7 +61,7 @@ function mostrarTaks() {
             <h5>${title}</h5>
             <p>${description}<p>
             
-            <button class="btn-floating btn waves-effect waves-light amber darken-2" onClick="borrarTask('${title}'),M.toast({html: 'Tarea Eliminada',classes: 'backgroundBtn'})" ><i class="material-icons">delete</i></button>
+            <button class="btn-floating btn waves-effect waves-light amber darken-2" onClick="borrarTask('${title}'),M.toast({html: 'Uy!Tarea Eliminada',classes: 'backgroundBtn'})" ><i class="material-icons">delete</i></button>
             </div>
         </div>`;
   });
