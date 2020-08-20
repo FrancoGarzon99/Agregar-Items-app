@@ -1,6 +1,9 @@
 # Agregar-Items-app
-WebApp ,podemos agregar items con su titulo y descripcion, los datos de esos items son guardados en localStorage.
-Los datos estaran siempre en el navegador por mas que se cierre.
-La idea del diseño es utilizar todo lo que nos brinda la libreria materialize sin tocar mucho codigo css, para darle 90% de los estilos con materialize.
-Tecnologias implementadas : HTML ,Materialize y Javascript.
+Las tecnologias usadas en esta App fueron :
 
+Estructura --> HTML
+UI --> CSS Materilize(libreria)
+Interactividad --> Javascript(Vanilla)
+Guardado de datos --> Local Storage
+
+En el siguente link podras ver el funcionamiento de la App ---> https://francogarzon99.github.io/Agregar-Items-app/
