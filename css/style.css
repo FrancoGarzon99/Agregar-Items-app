@@ -105,4 +105,7 @@ footer a {
   .cardOutput {
     width: 280px;
   }
+  .cardDeTareas {
+    width: auto;
+  }
 }
