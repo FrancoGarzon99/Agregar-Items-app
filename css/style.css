@@ -12,10 +12,10 @@ body {
 /*Estilos editados del boton principal*/
 .backgroundBtn {
   /* background-image: linear-gradient(to right, #22c5ee, #02f7ff); */
-  background-color:#7fd8be;
+  background-color: #7fd8be;
 }
-.backgroundBtn:hover{
-    background-color: #4DF9C3;
+.backgroundBtn:hover {
+  background-color: #4df9c3;
 }
 .pulse::before {
   /* background-image: linear-gradient(to right, #22c5ee, #02f7ff); */
@@ -27,7 +27,8 @@ body {
 }
 /*magenes de card principal para agregar items*/
 .cardDeTareas {
-  margin: 40px 0px;
+  margin: 40px auto;
+  width: 450px;
 }
 /*card donde salen los datos de los items*/
 .card {
@@ -59,7 +60,6 @@ footer a {
   color: #000;
 }
 
-
 /*COLORES DE INPUT y TEXTAREA*/
 /* label underline focus color */
 .input-field input:focus {
@@ -82,19 +82,27 @@ footer a {
 }
 /* label underline focus color */
 .input-field textarea:focus {
-    border-bottom: 1px solid #7fd8be !important;
-    box-shadow: 0 1px 0 0 #7fd8be !important;
+  border-bottom: 1px solid #7fd8be !important;
+  box-shadow: 0 1px 0 0 #7fd8be !important;
+}
+/* valid color */
+.input-field textarea[type="text"].valid {
+  border-bottom: 1px solid #7fd8be;
+  box-shadow: 0 1px 0 0 #7fd8be;
+}
+/* invalid color */
+.input-field textarea[type="text"].invalid {
+  border-bottom: 1px solid #7fd8be;
+  box-shadow: 0 1px 0 0 #7fd8be;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #7fd8be;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+  .cardOutput {
+    width: 280px;
   }
-  /* valid color */
-  .input-field textarea[type="text"].valid {
-    border-bottom: 1px solid #7fd8be;
-    box-shadow: 0 1px 0 0 #7fd8be;
-  }
-  /* invalid color */
-  .input-field textarea[type="text"].invalid {
-    border-bottom: 1px solid #7fd8be;
-    box-shadow: 0 1px 0 0 #7fd8be;
-  }
-  /* icon prefix focus color */
-  .input-field .prefix.active {
-    color: #7fd8be;
+}
