@@ -7,7 +7,7 @@ Las tecnologias usadas en esta App fueron :
 
 Estructura --> HTML |
 UI --> CSS Materilize(libreria) | 
-Interactividad --> Javascript(Vanilla) |
+Interactividad --> Vanilla Javascript |
 Guardado de datos --> Local Storage
 
 En el siguente link podras ver el funcionamiento de la App ---> https://francogarzon99.github.io/To-Do-app/
